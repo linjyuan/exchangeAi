@@ -1,0 +1,94 @@
+.liftViewStyle .sideToolbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  height: 100%;
+  padding: 20px 0;
+  color: var(--font-main);
+  user-select: none;
+  box-sizing: border-box;
+}
+.liftViewStyle .sideToolbar .menu {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.liftViewStyle .sideToolbar .menu .menuItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6px 0;
+  line-height: 1.2;
+  text-align: center;
+}
+.liftViewStyle .sideToolbar .menu .menuItem .menuItemName {
+  margin-top: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.liftViewStyle .sideToolbar .icon-yuque {
+  width: 30px;
+  height: 30px;
+  font-size: 23px !important;
+  line-height: 28px;
+  background: #fff;
+  border-radius: 50%;
+}
+.liftViewStyle .sideToolbar .icon-qcloud {
+  font-size: 23px !important;
+}
+.liftViewStyle .sideToolbar .icon-zhankai {
+  display: none;
+}
+.liftViewStyle .icon-wechat-qrcode {
+  width: 200px;
+}
+@media only screen and (max-width: 640px) {
+  .liftViewStyle .sideToolbar {
+    flex-direction: row;
+    width: 100%;
+    height: 44px;
+    padding: 0 16px;
+    margin-top: 16px;
+  }
+  .liftViewStyle .sideToolbar .menu {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 8px;
+    overflow-y: auto;
+  }
+  .liftViewStyle .sideToolbar .menu .menuItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 8px;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .liftViewStyle .sideToolbar .mallchatcolor {
+    display: block;
+    font-size: 23px !important;
+    line-height: 28px;
+  }
+  .liftViewStyle .sideToolbar .icon-zhankai {
+    display: block;
+  }
+  .liftViewStyle .sideToolbar .icon-yuque {
+    width: 23px;
+    height: 23px;
+    font-size: 18px !important;
+  }
+  .liftViewStyle .sideToolbar ::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+  }
+  .liftViewStyle .sideToolbar ::-webkit-scrollbar-thumb {
+    background-color: var(--background-2);
+  }
+  .liftViewStyle .sideToolbar ::-webkit-scrollbar-track {
+    background-color: var(--background);
+  }
+}

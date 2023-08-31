@@ -1,0 +1,10 @@
+.colorfulSpanStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.colorfulSpanStyle .colorfulSpan {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: fit-content;
+}

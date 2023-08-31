@@ -1,15 +1,22 @@
 import React, { useEffect, useState, FC } from "react";
-
-import "./index.less";
+import LiftView from "./components/liftView";
+import { Button } from "antd";
+// 跳转函数
+import { useNavigate } from "react-router-dom";
+import "./index.css";
 
 interface HomePagePage {}
 
 const HomePage: FC<HomePagePage> = (props) => {
-  // console.log({ styles });
+  // 执行 useNavigate 得到跳转函数
 
-  const [name, setName] = useState<string>("");
-
-  return <div className="homePageStyle">sss</div>;
+  return (
+    <div className="homePageStyle">
+      <div className="wrapper">
+        <LiftView></LiftView>
+      </div>
+    </div>
+  );
 };
 
 export default HomePage;

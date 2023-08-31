@@ -1,0 +1,118 @@
+.loginPageStyle {
+  min-height: 100%;
+  width: 100%;
+  padding: 10vh;
+  box-sizing: border-box;
+  background-image: url("../../assets/loginBackImg.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.loginPageStyle .loginDiv {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65vw;
+  height: 83vh;
+  box-shadow: 5px 5px 10px #888888, -5px -5px 10px #cccccc;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.loginPageStyle .loginDiv .LoginLift {
+  width: 50%;
+  height: 100%;
+  border-right: 1px solid #888888;
+  padding: 5rem 5rem 2rem 5rem;
+  box-sizing: border-box;
+}
+.loginPageStyle .loginDiv .LoginLift .projectName {
+  width: fit-content;
+  font-size: 2.5rem;
+}
+.loginPageStyle .loginDiv .loginRight {
+  width: 50%;
+  height: 100%;
+  padding: 5rem 5rem 2rem 5rem;
+  box-sizing: border-box;
+}
+.loginPageStyle .loginDiv .loginRight > div {
+  padding-bottom: 20px;
+  text-align: center;
+}
+.loginPageStyle .loginDiv .loginRight .projectName {
+  display: none;
+  font-size: 2rem;
+}
+.loginPageStyle .loginDiv .loginRight .loginTitle {
+  display: flex;
+}
+.loginPageStyle .loginDiv .loginRight .loginTitle .loginName {
+  display: flex;
+}
+.loginPageStyle .loginDiv .loginRight .loginTitle .loginName .loginType {
+  font-size: 2rem;
+  font-family: cursive;
+}
+.loginPageStyle .loginDiv .loginRight .loginTitle .goRegister {
+  flex: 1 0;
+  font-size: 1rem;
+  justify-content: flex-end;
+  text-align: right;
+  position: relative;
+}
+.loginPageStyle .loginDiv .loginRight .loginTitle .goRegister .goRegisterTitle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.loginPageStyle .loginDiv .loginRight .loginTitle .goRegister .goRegisterTitle span {
+  color: #005980;
+}
+.loginPageStyle .loginDiv .loginRight .getUserDiv > div:first-child {
+  padding-bottom: 20px;
+}
+.loginPageStyle .loginDiv .loginRight .checkSave {
+  text-align: left;
+}
+.loginPageStyle .loginDiv .loginRight .forgotPassword {
+  font-size: 1rem;
+}
+.loginPageStyle .loginDiv .loginRight .forgotPassword span {
+  color: #005980;
+}
+@media only screen and (max-width: 640px) {
+  .loginPageStyle {
+    padding: 0;
+    background-color: #cccccc;
+  }
+  .loginPageStyle .loginDiv {
+    width: 100%;
+    height: 100%;
+  }
+  .loginPageStyle .loginDiv .LoginLift {
+    display: none;
+  }
+  .loginPageStyle .loginDiv .loginRight {
+    width: 100%;
+  }
+  .loginPageStyle .loginDiv .loginRight .projectName {
+    display: block;
+  }
+  .loginPageStyle .loginDiv .loginRight .loginTitle .goRegister {
+    flex: 1 1;
+    font-size: 1rem;
+    justify-content: flex-end;
+    text-align: right;
+  }
+  .loginPageStyle .loginDiv .loginRight .loginTitle .goRegister .goRegisterTitle {
+    font-size: 10px;
+  }
+  .loginPageStyle .loginDiv .loginRight .forgotPassword {
+    font-size: 10px;
+  }
+  .loginPageStyle .loginDiv .loginRight .forgotPassword span {
+    color: #005980;
+  }
+}
